@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input class="zt" type="text"  placeholder="字长不能超过10个">
+    <input type="submit" class="btn"  value="按钮">
+</form>
+
+<script>
+    var Zt=document.querySelector('.zt')
+    var btn=document.querySelector('.btn')
+    Zt.oninput=function(){
+        if(Zt.value.length>9){
+//               btn.setAttribute("disabled")
+            btn.disabled=true
+        } else {
+            btn.disabled=false
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
